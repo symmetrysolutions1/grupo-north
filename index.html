@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d9083c" />
+    <title>North Field Intelligence</title>
+    <link rel="stylesheet" href="styles.css?v=20261009-02" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegación principal">
+        <div class="brand-lockup home-link" data-action="home" role="button" tabindex="0" aria-label="Volver a la portada">
+          <div class="brand-symbol"><span></span></div>
+          <div>
+            <div class="brand-name">North</div>
+            <div class="brand-caption">field intelligence</div>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <button class="nav-item" data-view="dashboard"><span class="nav-icon">⌂</span><span>Resumen</span></button>
+          <button class="nav-item" data-view="visits"><span class="nav-icon">＋</span><span>Nueva visita</span></button>
+          <button class="nav-item" data-view="evidence"><span class="nav-icon">▧</span><span>Evidencias</span><span class="nav-badge" id="evidenceCount">12</span></button>
+          <button class="nav-item" data-view="brands"><span class="nav-icon">◈</span><span>Marcas</span></button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="field-card">
+            <span class="status-dot"></span>
+            <div><strong>Operación activa</strong><small>Campaña octubre · 2026</small></div>
+          </div>
+          <button class="help-button"><span>?</span> Guía de campo</button>
+          <div class="profile-row"><div class="avatar">AR</div><div><strong>Alex R.</strong><small>Agente comercial</small></div><span class="more">•••</span></div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="crumb"><span>North Group</span><b>/</b><strong>Inteligencia comercial</strong></div>
+          <div class="top-actions"><button class="icon-button" title="Buscar">⌕</button><button class="icon-button" title="Notificaciones">♧<i></i></button><div class="top-avatar">AR</div></div>
+        </header>
+
+        <section class="hanging-banner" aria-label="Identidad de Grupo North">
+          <div class="banner-tape"></div>
+          <div class="banner-card">
+            <div class="banner-star"><span></span></div>
+            <span class="banner-word">Grupo<br />North<sup>®</sup></span>
+            <span class="banner-tagline">la cocina bien preparada</span>
+          </div>
+        </section>
+
+        <section class="page-view active" id="homeView">
+          <div class="home-hero">
+            <div class="home-copy">
+              <p class="eyebrow light">PLATAFORMA DE INTELIGENCIA COMERCIAL</p>
+              <h1>North en el campo.<br /><em>Decisiones con contexto.</em></h1>
+              <p class="home-lede">Registra lo que sucede en cada establecimiento y conviértelo en una lectura clara de precio, calidad y posicionamiento.</p>
+              <div class="home-actions">
+                <button class="home-action primary-home" data-action="new-visit"><span class="action-icon">↥</span><span><strong>Subir contenido</strong><small>Registrar una visita y cargar evidencias</small></span><b>→</b></button>
+                <button class="home-action secondary-home" data-action="review-info"><span class="action-icon">▧</span><span><strong>Revisar contenido</strong><small>Consultar visitas, evidencias y marcas</small></span><b>→</b></button>
+              </div>
+              <div class="home-footnote"><span class="status-dot"></span> Campaña activa · Octubre 2026 <span class="sep">·</span> Datos de campo centralizados</div>
+            </div>
+            <div class="home-orbit" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-core"><div class="brand-symbol large"><span></span></div><strong>North</strong><small>field intelligence</small></div><span class="orbit-label label-price">PRECIO</span><span class="orbit-label label-quality">CALIDAD</span><span class="orbit-label label-position">POSICIONAMIENTO</span></div>
+          </div>
+        </section>
+
+        <section class="page-view" id="dashboardView">
+          <div class="page-heading">
+            <div><p class="eyebrow">CENTRO DE CONTROL</p><h1>Buenos días, Alex <span>✦</span></h1><p class="lede">Convierte cada visita en una decisión comercial más clara.</p></div>
+            <button class="primary-button" data-action="new-visit"><span>＋</span> Registrar visita</button>
+          </div>
+
+          <div class="metric-grid">
+            <article class="metric-card metric-red"><div class="metric-top"><span>Visitas registradas</span><span class="metric-icon">↗</span></div><strong id="visitMetric">24</strong><small><b>+18%</b> vs. mes anterior</small><div class="sparkline red-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="metric-card"><div class="metric-top"><span>Establecimientos</span><span class="metric-icon">⌖</span></div><strong id="storeMetric">18</strong><small><b class="dark-green">+6</b> nuevos esta semana</small><div class="mini-bars"><i style="height:32%"></i><i style="height:46%"></i><i style="height:39%"></i><i style="height:64%"></i><i style="height:55%"></i><i style="height:84%"></i><i style="height:73%"></i></div></article>
+            <article class="metric-card"><div class="metric-top"><span>Evidencias cargadas</span><span class="metric-icon">▧</span></div><strong id="evidenceMetric">86</strong><small><b class="dark-green">92%</b> con datos completos</small><div class="progress"><span style="width:92%"></span></div><small class="progress-label">Calidad de captura</small></article>
+            <article class="metric-card"><div class="metric-top"><span>Marcas observadas</span><span class="metric-icon">◈</span></div><strong id="brandMetric">12</strong><small><b class="amber">3</b> requieren revisión</small><div class="brand-dots"><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <section class="panel recent-panel"><div class="panel-heading"><div><p class="eyebrow">ACTIVIDAD RECIENTE</p><h2>Últimas visitas</h2></div><button class="text-button" data-view-link="visits">Ver todas <span>→</span></button></div><div class="table-wrap"><table><thead><tr><th>Establecimiento</th><th>Ciudad</th><th>Marca principal</th><th>Precio observado</th><th>Estado</th></tr></thead><tbody id="recentVisits"></tbody></table></div></section>
+            <section class="panel insight-panel"><div class="panel-heading"><div><p class="eyebrow">SEÑAL DE MERCADO</p><h2>Panorama rápido</h2></div><span class="live-pill"><i></i> Actualizado ahora</span></div><div class="insight-score"><div class="score-ring"><strong>68</strong><span>/ 100</span></div><div><strong>Oportunidad de diferenciación</strong><p>Las marcas observadas concentran su propuesta en precio. Hay espacio para ganar desde calidad percibida.</p></div></div><div class="insight-list"><div><span class="insight-dot red"></span><span>Precio promedio categoría</span><strong>$12.400</strong></div><div><span class="insight-dot yellow"></span><span>Calidad percibida promedio</span><strong>3.8 / 5</strong></div><div><span class="insight-dot green"></span><span>Mensajes de posicionamiento</span><strong>7 activos</strong></div></div><button class="outline-button" data-view-link="brands">Abrir comparador <span>→</span></button></section>
+          </div>
+
+          <section class="quick-start"><div class="quick-copy"><span class="quick-mark">✦</span><div><p class="eyebrow">EN CAMPO</p><h2>¿Acabas de llegar a un establecimiento?</h2><p>Registra el contexto primero. Los datos se guardan aunque termines la evidencia después.</p></div></div><button class="dark-button" data-action="new-visit">Comenzar registro <span>→</span></button></section>
+        </section>
+
+        <section class="page-view" id="visitsView">
+          <div class="page-heading"><div><p class="eyebrow">CAPTURA DE CAMPO</p><h1>Registrar visita</h1><p class="lede">Una ficha completa reemplaza el Excel disperso y deja la evidencia en contexto.</p></div><span class="save-note"><i></i> Guardado local activado</span></div>
+          <form class="visit-form" id="visitForm" data-step="1">
+            <div class="form-main"><section class="form-section" data-step="1"><div class="section-title"><span>01</span><div><h2>Contexto del lugar</h2><p>Ubica la observación antes de registrar la marca.</p></div></div><div class="form-grid"><label>Establecimiento<input name="store" required placeholder="Ej. Supermercado La 14" /></label><label>Ciudad / municipio<input name="city" required placeholder="Ej. Cali" /></label><label class="wide">Dirección o referencia<input name="address" placeholder="Ej. Carrera 5 # 12-40" /></label><label>Tipo de establecimiento<select name="format"><option>Supermercado</option><option>Restaurante</option><option>Panadería</option><option>Mayorista</option><option>Otro</option></select></label><label>Fecha de visita<input name="date" type="date" required /></label></div><div class="step-actions"><button class="primary-button step-button" type="button" data-step-target="2">Siguiente <span>→</span></button></div></section>
+              <section class="form-section" data-step="2"><div class="section-title"><span>02</span><div><h2>Marca y oferta</h2><p>Registra el dato comparable y su presentación.</p></div></div><div class="form-grid"><label>Marca observada<input name="brand" required placeholder="Ej. Marca competidora" /></label><label>Categoría<input name="category" required placeholder="Ej. Salsas preparadas" /></label><label>Producto / presentación<input name="product" placeholder="Ej. Salsa de tomate 400 g" /></label><label>Precio observado<div class="input-with-prefix"><span>$</span><input name="price" type="number" min="0" placeholder="12.400" /></div></label><label>Precio promocional<div class="input-with-prefix"><span>$</span><input name="promo" type="number" min="0" placeholder="Opcional" /></div></label><label>Canal<select name="channel"><option>Góndola</option><option>Nevera / exhibición</option><option>Menú</option><option>Marketplace</option><option>Otro</option></select></label></div><div class="step-actions"><button class="cancel-button step-back" type="button" data-step-target="1">← Atrás</button><button class="primary-button step-button" type="button" data-step-target="3">Siguiente <span>→</span></button></div></section>
+              <section class="form-section" data-step="3"><div class="section-title"><span>03</span><div><h2>Calidad y posicionamiento</h2><p>Combina observación del agente con la evidencia visual.</p></div></div><div class="form-grid"><label>Calidad percibida<select name="quality"><option value="">Seleccionar</option><option>5 — Sobresaliente</option><option>4 — Alta</option><option>3 — Media</option><option>2 — Baja</option><option>1 — Deficiente</option></select></label><label>Posicionamiento<select name="position"><option>Premium</option><option>Calidad / confianza</option><option>Precio / ahorro</option><option>Practicidad</option><option>Tradición</option><option>Sin identificar</option></select></label><label class="wide">Observaciones<textarea name="notes" rows="4" placeholder="¿Qué viste? ¿Qué comunica la marca? ¿Qué diferencia encuentras?"></textarea></label></div><div class="step-actions"><button class="cancel-button step-back" type="button" data-step-target="2">← Atrás</button><button class="primary-button step-button" type="submit">Guardar visita <span>→</span></button></div></section></div>
+            <aside class="form-aside"><div class="upload-card"><div class="upload-icon">↥</div><h3>Evidencia de campo</h3><p>Sube una foto, formulario, PDF o captura de la visita.</p><label class="dropzone"><input type="file" id="evidenceFile" accept="image/*,.pdf,.xlsx,.xls,.csv" /><span class="drop-visual">＋</span><strong>Seleccionar archivo</strong><small>o arrástralo aquí<br />JPG, PNG, PDF, XLSX</small></label><div id="filePreview" class="file-preview hidden"></div></div><div class="tip-card"><span>✦</span><div><strong>Tip de captura</strong><p>Fotografía el precio junto al producto y conserva la fecha visible cuando sea posible.</p></div></div><button class="cancel-button" type="button" data-view-link="dashboard">Cancelar</button></aside>
+          </form>
+        </section>
+
+        <section class="page-view" id="evidenceView"><div class="page-heading"><div><p class="eyebrow">REPOSITORIO DE SOPORTES</p><h1>Evidencias</h1><p class="lede">Todo lo que el equipo captura, con contexto y trazabilidad.</p></div></div><div class="filter-bar"><div class="search-field">⌕<input id="evidenceSearch" placeholder="Buscar establecimiento, marca o archivo" /></div><button class="filter-button">Todas las categorías <span>⌄</span></button><button class="filter-button">Últimos 30 días <span>⌄</span></button></div><div class="evidence-grid" id="evidenceGrid"></div></section>
+
+        <section class="page-view" id="brandsView"><div class="page-heading"><div><p class="eyebrow">COMPARADOR DE MARCAS</p><h1>Panorama competitivo</h1><p class="lede">Una lectura rápida de precio, calidad y territorio de posicionamiento.</p></div><button class="outline-button">Exportar matriz <span>↓</span></button></div><div class="compare-controls"><div class="compare-select"><small>MARCA DE REFERENCIA</small><strong>North <span>⌄</span></strong></div><span class="versus">vs.</span><div class="compare-select"><small>COMPARAR CON</small><strong>Todas las marcas <span>⌄</span></strong></div><div class="compare-date">Corte <strong>08 oct 2026</strong></div></div><div class="brand-table panel"><table><thead><tr><th>Marca</th><th>Precio promedio</th><th>Calidad percibida</th><th>Posicionamiento dominante</th><th>Observaciones</th><th></th></tr></thead><tbody><tr class="north-row"><td><div class="brand-cell"><span class="brand-mini red-mini">✦</span><strong>North</strong><em>Referencia</em></div></td><td><strong>$13.900</strong><small class="muted">+12% vs. categoría</small></td><td><span class="rating">4.5 <i>★★★★★</i></span><small class="muted">24 observaciones</small></td><td><span class="position-pill premium">Calidad / confianza</span></td><td><span class="trend up">↑</span> Alta consistencia visual</td><td>→</td></tr><tr><td><div class="brand-cell"><span class="brand-mini">A</span><strong>Marca A</strong></div></td><td><strong>$11.200</strong><small class="muted">-8% vs. North</small></td><td><span class="rating">3.7 <i>★★★★<b>★</b></i></span><small class="muted">18 observaciones</small></td><td><span class="position-pill value">Precio / ahorro</span></td><td><span class="trend flat">→</span> Alta presencia en góndola</td><td>→</td></tr><tr><td><div class="brand-cell"><span class="brand-mini green-mini">B</span><strong>Marca B</strong></div></td><td><strong>$14.600</strong><small class="muted">+5% vs. North</small></td><td><span class="rating">4.1 <i>★★★★<b>★</b></i></span><small class="muted">12 observaciones</small></td><td><span class="position-pill trust">Tradición</span></td><td><span class="trend up">↑</span> Mensaje diferenciado</td><td>→</td></tr></tbody></table></div><div class="comparison-insight"><span class="quick-mark">✦</span><div><strong>Lectura para el equipo</strong><p>North tiene la percepción de calidad más alta del grupo, pero Marca A gana en presencia y precio. La próxima visita debería validar si la diferencia de calidad se explica y se ve en el punto de venta.</p></div><button class="text-button">Ver análisis <span>→</span></button></div></section>
+
+        <footer><span>North Field Intelligence</span><span>Datos de campo · Campaña octubre 2026</span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js?v=20261009-02"></script>
+  </body>
+</html>
